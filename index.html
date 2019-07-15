@@ -113,6 +113,9 @@ orthographic.events.on("hit", function(){
     chart.projection = new am4maps.projections.Orthographic();
 })
 
+// create capital markers
+var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+
 // define template
 var imageSeriesTemplate = imageSeries.mapImages.template;
 var circle = imageSeriesTemplate.createChild(am4core.Sprite);
